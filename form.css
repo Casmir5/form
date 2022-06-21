@@ -1,0 +1,109 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'poppins';
+}
+html {
+  height: 100%;
+}
+body {
+  background-image: url(image/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+  font-size: 16px;
+  height: 100%;
+}
+main {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  gap: 2rem;
+}
+
+.flex_1 {
+  color: white;
+}
+.fbtn {
+  background-color: hsl(248, 32%, 49%);
+  color: white;
+  box-shadow: 0px 9px 0px #e46c70d2;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 0.25rem;
+}
+.forms {
+  background-color: white;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0px 8px 3px rgba(0, 0, 0, 0.205);
+
+}
+
+.sbtn {
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+ 
+}
+input,
+button {
+  width: 100%;
+}
+input {
+  padding: 10px;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(128, 128, 128, 0.63);
+}
+
+h1{
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+input[type=email]:required:invalid:focus-visible{
+    background-image: url(image/icon-error.svg);
+    background-position: 90% center;
+    background-repeat: no-repeat;
+    border:var(--primary-red) 1px solid;
+}
+input[type=text]:required:invalid:focus-visible{
+    background-image: url(image/icon-error.svg);
+    background-position: 90% center;
+    background-repeat: no-repeat;
+    border:var(--primary-red) 1px solid;
+}
+input[type=password]:required:invalid:focus-visible{
+    background-image: url(image/icon-error.svg);
+    background-position: 90% center;
+    background-repeat: no-repeat;
+    border:var(--primary-red) 1px solid;
+}
+button {
+  margin-bottom: 5px;
+  padding: 12px;
+  border: none;
+  border-radius: 0.19rem;
+}
+.terms-con{
+    color: hsl(246, 25%, 77%);
+    font-size: 0.7rem;
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.terms{
+    color: hsla(0, 93%, 50%, 0.705);
+}
+@media only screen and (max-width: 375px) {
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+  h1, p{
+    text-align: center;
+
+  }
+  body{
+    background-image: url(image/bg-intro-mobile.png);
+  }
+}
